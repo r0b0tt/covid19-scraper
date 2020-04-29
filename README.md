@@ -4,7 +4,7 @@ Note: This project is still under development
 
 > Data scraper for covid-19 data
 
-This project aims at scraping publicly available covid-19 data and providing it in form of a HTTP Rest API
+The aim of this project is to scrape publicly available covid-19 data and provide it in form of a HTTP Rest API
 
 ## Prerequisites
 
@@ -12,7 +12,7 @@ This project runs on python 3.7+. You can find installation instructions [here](
 
 ## Development setup
 
-It is recommended that you create a virtual environment to manage the pythondependencies for this project. You can either use [virtualenv] or [virtualenvwrapper] or any other recommended dependency management tool for python.
+It is recommended that you create a virtual environment to manage the pythondependencies for this project. You can either use [virtualenv](https://virtualenv.pypa.io/en/latest/) or [virtualenvwrapper](https://virtualenvwrapper.readthedocs.io/en/latest/) or any other recommended dependency management tool for python.
 
 1. Activate your environment
 2. Navigate to the root of this project and install dependencies
