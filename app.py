@@ -4,6 +4,7 @@ from spiders.who import who_spider
 from dotenv import load_dotenv
 import os
 import secrets
+from flask_cors import CORS
 
 # Load environment variables from .env file
 load_dotenv()
@@ -12,6 +13,9 @@ load_dotenv()
 app = Flask(__name__)
 app.config["DEBUG"] = os.getenv("DEBUG", False)
 app.config["SECRET_KEY"] = secrets.token_hex()
+
+# Set up cors
+CORS(app)
 
 # Initialize Api
 api = Api(app)
