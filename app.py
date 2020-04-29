@@ -15,4 +15,4 @@ class FaqsResource(Resource):
 api.add_resource(FaqsResource, "/faqs")
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
