@@ -16,11 +16,11 @@ def who_spider():
     # Remove the first span item that contains a date
     answers.pop(0)
 
-    faqs = dict(
-        zip(
-            [question.text for question in questions],
-            [answer.text for answer in answers],
+    faqs = []
+
+    for (question, answer) in zip(questions, answers):
+        faqs.append(
+            {"question": question.text, "answer": answer.text,}
         )
-    )
 
     return faqs

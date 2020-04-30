@@ -1,0 +1,33 @@
+Get all faqs
+---
+definitions:
+  Faqs:
+    type: array
+    items:
+      $ref: "#/definitions/Faq"
+
+  Faq:
+    type: object
+    required: [question, answer]
+    properties:
+      question:
+        type: string
+        required: true
+      answer:
+        type: string
+responses:
+  200:
+    description: A list of all frequently asked questions
+    schema:
+      $ref: "#/definitions/Faqs"
+    examples:
+      [
+        {
+          "answer": "This is a new strain of coronavirus that has not been previously identified in humans.\r\nCoronaviruses are a large family of viruses that are known to cause illness in humans and animals. In humans, this large family of viruses are known to cause illness ranging from the common cold to Severe Acute Respiratory Syndrome (SARS). ",
+          "question": "What is the novel coronavirus? ",
+        },
+        {
+          "answer": "In confirmed cases of illness in humans, common symptoms have been acute, serious respiratory illness with fever, cough, shortness of breath, and breathing difficulties. Based on current clinical experience, the infection generally presents as pneumonia. It has caused kidney failure and death in some cases. It is important to note that the current understanding of the illness caused by this infection is based on a limited number of cases and may change as more information becomes available. ",
+          "question": "What are the symptoms of novel coronavirus? ",
+        },
+      ]
