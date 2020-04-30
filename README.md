@@ -1,7 +1,5 @@
 # covid-19 scraper
 
-Note: This project is still under development
-
 > Data scraper for covid-19 data
 
 The aim of this project is to scrape publicly available covid-19 data and provide it in form of a HTTP Rest API
@@ -9,6 +7,12 @@ The aim of this project is to scrape publicly available covid-19 data and provid
 ## Prerequisites
 
 This project runs on python 3.7+. You can find installation instructions [here](https://python.org)
+
+## Run with docker
+
+```
+docker run -p 5000:5000 r0b0t/covid19-scraper
+```
 
 ## Development setup
 
